@@ -14,7 +14,7 @@ function Login() {
     if (!email || !password) return setError("Both fields are required");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/users/login", {
+      const res = await axios.post("https://colladome-backend.vercel.app/api/users/login", {
         email,
         password,
       });
